@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUNBEAM</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body onload="nextpage()">
+   
+
+    <div class="container">
+      <table class="table table-bordered">
+        <tr>
+          <td>User Name</td>
+          <td><div id="username"></div></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td id="password"></td>
+        </tr>
+        <tr>
+          <td>User Email</td>
+          <td id="email"></td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td id="age"></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td id="Gender"></td>
+        </tr>
+
+        <tr>
+          <td>Address</td>
+          <td id="Address"></td>
+        </tr>
+        <tr>
+          <td>10%</td>
+          <td id="10th"></td>
+        </tr>
+        <tr>
+          <td>12%</td>
+          <td id="12th"></td>
+        </tr>
+        <tr>
+          <td>Degree</td>
+          <td id="degree"></td>
+        </tr>
+        <tr>
+          <td>University</td>
+          <td id="University"></td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      function nextpage() {
+        var username = document.getElementById("username");
+        username.innerText = sessionStorage.getItem("username");
+        var password = document.getElementById("password");
+        password.innerText = sessionStorage.getItem("password");
+        var email = document.getElementById("email");
+        email.innerText = sessionStorage.getItem("email");
+        var Address = document.getElementById("Address");
+        Address.innerText = "address";
+        var age = document.getElementById("age");
+        age.innerText = sessionStorage.getItem("age");
+        var tenth = document.getElementById("10th");
+        tenth.innerText = sessionStorage.getItem("10th");
+        var twelfth = document.getElementById("12th");
+        twelfth.innerText = sessionStorage.getItem("12th");
+        var University = document.getElementById("University");
+        University.innerText = sessionStorage.getItem("University");
+        var degree = document.getElementById("degree");
+        degree.innerText = sessionStorage.getItem("degree");
+      }
+    </script>
+
+
+  </body>
+</html>
